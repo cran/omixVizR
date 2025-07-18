@@ -1,0 +1,17 @@
+ce4d6f821835251a86d352e95e9bb243 *DESCRIPTION
+ef1899005ec4c9623d0b92c16d30790a *LICENSE
+e851229a7571a3e7a47ff10ea9b31822 *NAMESPACE
+0d42071d6691baf2388d8995404cb66b *NEWS.md
+f430ccffb9ae4109c31dae964cf76937 *R/gwas_qqman.R
+0dbfdc71439662efadbe2f1f83011c74 *R/omixVizR-package.R
+cb3b20077bebc5da31fc1b46c657c0ff *build/partial.rdb
+cea003afccca966864c84fe23cc567b2 *inst/WORDLIST
+60d827f9fdfa77d88cb105a457313189 *inst/extdata/MetroSans-Bold.ttf
+6da6af0a98e343bb5f0ee6a2b6e959f7 *inst/extdata/MetroSans-BoldItalic.ttf
+7df0eba94a4ed0290a75d24f7979b5f3 *inst/extdata/MetroSans-Regular.ttf
+707ef85bee926f6aa675e0664087f7c4 *inst/extdata/sample_gwas.assoc.linear
+71c7cb484a4886f16bd52931276dd71e *man/omixVizR-package.Rd
+98a8d2775fff522f3677a59e962599db *man/plot_qqman.Rd
+332173f20d20942c02019350ea4dcadc *tests/spelling.R
+b3c68c5d88bd0a2f804313a8c2f1e965 *tests/testthat.R
+41a37c664b149cbc9ec10f2a62745323 *tests/testthat/test-gwas_qqman.R
