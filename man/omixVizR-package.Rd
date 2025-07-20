@@ -11,7 +11,8 @@ Provides a suite of tools for the comprehensive visualization of multi-omics dat
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://leslie-lu.github.io/}
+  \item \url{https://github.com/Leslie-Lu/omixVizR}
+  \item Report bugs at \url{https://github.com/Leslie-Lu/omixVizR/issues}
 }
 
 }

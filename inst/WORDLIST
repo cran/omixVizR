@@ -1,12 +1,16 @@
 Jupyter
 Liu
+MAF
+MAFs
 MetroSans
 ORCID
+ORs
 Omics
 PLINK
 Siyang
 Yanhong
 al
+bt
 cn
 doi
 dontrun
@@ -14,6 +18,7 @@ donttest
 edu
 et
 extdata
+genpwr
 ggplot
 liusy
 liuyh
@@ -23,7 +28,6 @@ omics
 perf
 png
 proteomics
-qqman
 sysu
 tempdir
 transcriptomics

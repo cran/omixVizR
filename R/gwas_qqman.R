@@ -1,10 +1,12 @@
-#' @title plot_qqman
+#' @title Plot GWAS QQ and Manhattan Plots
 #' @description Create GWAS QQ & Manhattan Plots.
 #' @param plink_assoc_file Path to the PLINK association file.
 #' @param pheno_name Phenotype name.
 #' @param maf_filter Minor allele frequency filter, Default: NULL
 #' @param output_graphics Output graphics format, Default: 'png'
 #' @param save_plot Logical, whether to save plots to files. If FALSE, plots are only displayed. Default: TRUE
+#' @param lambda1_qq_pos A numeric vector of length 2 specifying the `c(hjust, vjust)` for the lambda text in the QQ plot. Default: `c(2.1, -5.5)`.
+#' @param lambda2_qq_pos A numeric vector of length 2 specifying the `c(hjust, vjust)` for the SNP count (N) text in the QQ plot. Default: `c(1.565, -4.0)`.
 #' @return A list containing the ggplot objects for the Manhattan and QQ plots.
 #' @author Zhen Lu <luzh29@mail2.sysu.edu.cn>
 #' @author Yanhong Liu <liuyh275@mail2.sysu.edu.cn>
@@ -58,7 +60,9 @@ plot_qqman = function(
   pheno_name,
   maf_filter = NULL,
   output_graphics = "png",
-  save_plot = TRUE
+  save_plot = TRUE,
+  lambda1_qq_pos = c(2.1, -5.5),
+  lambda2_qq_pos = c(1.565, -4.0)
 ) {
   font_dir <- system.file("extdata", package = "omixVizR")
   if (!"MetroSans" %in% sysfonts::font_families()) {
@@ -233,14 +237,14 @@ plot_qqman = function(
     ggplot2::geom_text(
       data = lambdaData,
       ggplot2::aes(x = Inf, y = -Inf, label = label1),
-      hjust = 2.1, vjust = -5.5, size = 8,
+      hjust = lambda1_qq_pos[1], vjust = lambda1_qq_pos[2], size = 8,
       fontface = "bold",
       parse = TRUE
     ) +
     ggplot2::geom_text(
       data = lambdaData,
       ggplot2::aes(x = Inf, y = -Inf, label = label2),
-      hjust = 1.565, vjust = -4.0, size = 8,
+      hjust = lambda2_qq_pos[1], vjust = lambda2_qq_pos[2], size = 8,
       fontface = "bold",
       parse = TRUE
     ) +
